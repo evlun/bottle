@@ -1,6 +1,6 @@
 {
   "name": "bottle",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Transport-agnostic logging",
   "keywords": ["log", "logger", "logging", "transport"],
   "author": "Erik Lundin",
