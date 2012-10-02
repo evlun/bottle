@@ -100,3 +100,4 @@ exports.create = function(levels) {
 
 // bundled transports
 exports.file = require('./transports/file.js');
+exports.plain = require('./transports/plain.js');
