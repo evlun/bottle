@@ -1,5 +1,9 @@
 {
   "name": "bottle",
   "version": "0.0.0",
-  "author": "Erik Lundin"
+  "description": "Transport-agnostic logging",
+  "keywords": ["log", "logger", "logging", "transport"],
+  "author": "Erik Lundin",
+  "homepage": "https://github.com/evlun/bottle",
+  "main": "bottle.js"
 }
