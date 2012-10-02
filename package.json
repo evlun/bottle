@@ -5,5 +5,8 @@
   "keywords": ["log", "logger", "logging", "transport"],
   "author": "Erik Lundin",
   "homepage": "https://github.com/evlun/bottle",
+  "dependencies": {
+    "tide": "*"
+   },
   "main": "bottle.js"
 }
