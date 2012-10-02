@@ -1,8 +1,9 @@
-**bottle** provides a very customisable framework for simple logging across
-multiple transports from the same interface. Transports are plain functions with
-a `function(logger, time, level, message)` signature.
+**bottle** provides a very customisable framework for hassle free logging across
+multiple transports, from a unified interface. Transports are simple functions
+with a `function(logger, time, level, message)` signature.
 
-The module comes bundled with the "plain" and "file" transports.
+The module comes bundled with two transports: `bottle.plain()` and
+`bottle.file(path)`.
 
 ### Usage
 
