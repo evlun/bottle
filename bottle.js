@@ -96,3 +96,7 @@ Logger.prototype.add = function(transport, options) {
 exports.create = function(levels) {
   return new Logger(levels);
 };
+
+
+// bundled transports
+exports.file = require('./transports/file.js');
