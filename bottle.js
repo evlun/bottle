@@ -54,7 +54,8 @@ Logger.prototype._log = function(level) {
 
 // essentially like `util.format`, but with the added "%v" token
 Logger.prototype._format = function(format) {
-  var args = __slice(arguments, 1)
+  var inspect
+    , args = __slice(arguments, 1)
     , i = 0;
 
   return format.replace(/%[%sdjv]/g, function(match) {
@@ -63,10 +64,11 @@ Logger.prototype._format = function(format) {
     }
 
     switch (match) {
-      case '%j': return JSON.stringify(args[i++]);
-      case '%v': return util.inspect(args[i++]).replace(/\s*\n\s+/g, ' ');
       case '%s': return '' + args[i++];
       case '%d': return +args[i++];
+      case '%j': return JSON.stringify(args[i++]);
+      case '%v': inspect = util.inspect(args[i++], false, Infinity);
+                 return inspect.replace(/\s*\n\s+/g, ' ');
     }
   });
 };
